@@ -18,6 +18,8 @@ public class Quiz {
 
     private Integer totalTime;
 
+    private String type;
+
     @ManyToOne
     private Topic topic;
 
