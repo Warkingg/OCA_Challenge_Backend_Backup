@@ -18,6 +18,7 @@ public class Topic {
     @OneToMany(mappedBy = "topic", cascade = CascadeType.ALL)
     private List<Level> levels;
 
+
     public Topic(String name) {this.name = name;}
 
     public void addLevel(Level level){
