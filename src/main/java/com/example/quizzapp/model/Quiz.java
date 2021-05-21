@@ -18,7 +18,7 @@ public class Quiz {
 
     private Integer totalTime;
 
-    @OneToMany(mappedBy = "quiz", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "quiz", cascade = CascadeType.ALL)
     private List<History> histories;
 
 }

@@ -18,8 +18,8 @@ public class LevelService implements ILevelService{
     private ITopicRepository topicRepository;
 
     @Override
-    public Page<Level> findAll(Pageable pageable) {
-        return levelRepository.findAll(pageable);
+    public Iterable<Level> findAll() {
+        return levelRepository.findAll();
     }
 
     @Override
