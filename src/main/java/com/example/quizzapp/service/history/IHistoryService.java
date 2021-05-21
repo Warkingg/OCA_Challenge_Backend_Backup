@@ -7,4 +7,6 @@ public interface IHistoryService extends IGeneralService<History> {
     History findHistoryByScore(int score);
 
     History findHistoryByUsername(String username);
+
+    Iterable<History> findAll(int page, int size);
 }

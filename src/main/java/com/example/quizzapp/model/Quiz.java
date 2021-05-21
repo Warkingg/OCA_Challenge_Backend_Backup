@@ -18,9 +18,11 @@ public class Quiz {
 
     private Integer totalTime;
 
+    @ManyToMany(mappedBy = "quiz", cascade = CascadeType.ALL)
+    private List<History> histories;
+  
     private String type;
 
-    @ManyToOne
-    private Topic topic;
+
 
 }

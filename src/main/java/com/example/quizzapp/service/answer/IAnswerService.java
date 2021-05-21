@@ -6,4 +6,6 @@ import com.example.quizzapp.service.IGeneralService;
 
 public interface IAnswerService extends IGeneralService<Answer> {
     Answer addAnswer(Answer answer, Question question);
+
+    Iterable<Answer> findAll(int page, int size);
 }
