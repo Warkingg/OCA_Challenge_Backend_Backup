@@ -37,4 +37,12 @@ public class Question {
         getAnswers().add(answer);
         answer.setQuestion(this);
     }
+
+    public Question(String type, boolean isAnswered, List<Answer> answers, Quiz quiz, Level level) {
+        this.type = type;
+        this.isAnswered = isAnswered;
+        this.answers = answers;
+        this.quiz = quiz;
+        this.level = level;
+    }
 }
