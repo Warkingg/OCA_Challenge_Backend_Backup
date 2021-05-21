@@ -21,17 +21,4 @@ public class History {
 
     private int score;
 
-    @ManyToOne
-    private User user;
-
-    public History() {
-    }
-
-    public History(String username, String topicName, String level, int totalTime, int score) {
-        this.username = username;
-        this.topicName = topicName;
-        this.level = level;
-        this.totalTime = totalTime;
-        this.score = score;
-    }
 }

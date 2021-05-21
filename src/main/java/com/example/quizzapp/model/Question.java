@@ -25,9 +25,6 @@ public class Question {
     private List<Answer> answers;
 
     @ManyToOne
-    private Quiz quiz;
-
-    @ManyToOne
     private Level level;
 
     public void addAnswer(Answer answer){
@@ -38,11 +35,10 @@ public class Question {
         answer.setQuestion(this);
     }
 
-    public Question(String type, boolean isAnswered, List<Answer> answers, Quiz quiz, Level level) {
+    public Question(String type, boolean isAnswered, List<Answer> answers, Level level) {
         this.type = type;
         this.isAnswered = isAnswered;
         this.answers = answers;
-        this.quiz = quiz;
         this.level = level;
     }
 }
