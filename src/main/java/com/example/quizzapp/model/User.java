@@ -1,4 +1,4 @@
-package model;
+package com.example.quizzapp.model;
 
 import lombok.Data;
 
@@ -17,4 +17,14 @@ public class User {
     private String username;
 
     private String password;
+
+    private String rePassword;
+
+    private String firstName;
+
+    private String lastName;
+
+    private String phoneNumber;
+
+    private String email;
 }
