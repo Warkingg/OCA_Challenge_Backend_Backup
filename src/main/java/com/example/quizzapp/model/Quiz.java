@@ -20,5 +20,9 @@ public class Quiz {
 
     @ManyToMany(mappedBy = "quiz", cascade = CascadeType.ALL)
     private List<History> histories;
+  
+    private String type;
+
+
 
 }
